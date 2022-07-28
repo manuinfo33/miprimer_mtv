@@ -8,3 +8,10 @@ def create_person(request):
     }
     return render(request,"new_person.html",context=context)
 
+
+def list_family (request):
+    total_family= Family.objects.all()
+    context={
+        "total_family":total_family
+    }
+    return render(request,"all_family.html",context=context)

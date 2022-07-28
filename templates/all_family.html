@@ -1,0 +1,8 @@
+<h2>Los familiares creados hasta el momento son</h2>
+<h2>____________________________________</h2>
+
+{% for person in total_family %}
+<h3>Nombre= {{person.name}}</h3>
+<h3>Su edad es= {{person.age}} años</h3>
+<h3>--------------------------------------</h3>
+{% endfor %}
